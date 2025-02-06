@@ -20,9 +20,8 @@ jobs:
       - name: 한국수출입은행 API로 환율 업데이트
         run: |
           pip install requests python-dotenv
-          python update_weather.py
+          python update_currency.py
         env:
-          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
           AUTHKEY: ${{ secrets.AUTHKEY }}
           
 
