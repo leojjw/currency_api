@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: 한국수출입은행 API로 환율 업데이트
+      - name: 외부 API로 환율 업데이트
         run: |
           pip install requests python-dotenv
           python update_currency.py
