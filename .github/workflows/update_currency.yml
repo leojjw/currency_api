@@ -19,11 +19,8 @@ jobs:
 
       - name: 외부 API로 환율 업데이트
         run: |
-          pip install requests python-dotenv
+          pip install requests
           python update_currency.py
-        env:
-          AUTHKEY: ${{ secrets.AUTHKEY }}
-          
 
       - name: 변경 사항 커밋 및 푸시
         run: |

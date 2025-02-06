@@ -1,11 +1,8 @@
 import requests
 import os
 from datetime import datetime
-from dotenv import load_dotenv
 
-load_dotenv()
 today = datetime.today().strftime("%Y-%m-%d")
-API_KEY = os.getenv("AUTHKEY")
 URL = f"https://{today}.currency-api.pages.dev/v1/currencies/krw.json"
 
 
