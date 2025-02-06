@@ -34,7 +34,7 @@ def update_readme():
         currency_table += "\n".join(currency_info)
 
     readme_content = f"""
-이 리포지토리는 한국수출입은행 API를 사용하여 환율 정보를 자동으로 업데이트합니다.
+이 리포지토리는 [외부 API](https://github.com/fawazahmed0/exchange-api)를 사용하여 환율 정보를 자동으로 업데이트합니다.
 
 ## 현재 환율
 
