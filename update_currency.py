@@ -37,7 +37,7 @@ def update_readme():
 
 {currency_table}
 
-⏳ 업데이트 날짜: {today}
+⏳ 업데이트 날짜: {date}
 
 ---
 자동 업데이트 봇에 의해 관리됩니다.
