@@ -1,9 +1,9 @@
 import requests
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 
-today = datetime.today().strftime("%Y-%m-%d")
-URL = f"https://{today}.currency-api.pages.dev/v1/currencies/krw.json"
+date = (datetime.today() - timedelta(days=1)).strftime("%Y-%m-%d")
+URL = f"https://{date}.currency-api.pages.dev/v1/currencies/krw.json"
 
 
 README_PATH = "README.md"
